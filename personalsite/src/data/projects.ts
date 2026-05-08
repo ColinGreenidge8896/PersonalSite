@@ -29,7 +29,7 @@ export const projects: Project[] = [
         tags: ["React", "Raspberry Pi", "nginx", "Tailscale", "Linux"],
         featured: true,
         links: [
-            { label: "GitHub", href: "https://github.com/ColinGreenidge8896" },
+            { label: "GitHub", href: "https://github.com/ColinGreenidge8896/PersonalSite" },
         ],
         highlights: [
             "Set up a Raspberry Pi 4B as a self-hosted deployment target with a 3D printed case.",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
         tags: ["Python", "Flask", "MySQL", "Docker", "JMeter"],
         featured: true,
         links: [
-            { label: "GitHub", href: "https://github.com/ColinGreenidge8896" },
+            { label: "GitHub", href: "https://github.com/Digi-Bomb/Group-15-Project-VI" },
         ],
         highlights: [
             "Built booking and RSVP flows with database-backed validation logic.",
@@ -72,7 +72,9 @@ export const projects: Project[] = [
         status: "Completed",
         tags: ["Python", "Node.js", "MySQL", "Docker", "REST API"],
         featured: false,
-        links: [],
+        links: [
+            { label: "GitHub", href: "https://github.com/ColinGreenidge8896/Project5Database" },
+        ],
         highlights: [
             "Designed the normalized relational database schema with input validation and sanitization.",
             "Built REST API endpoints with transaction handling and comprehensive testing.",
@@ -93,7 +95,7 @@ export const projects: Project[] = [
         tags: ["Unity", "C#", "Game Jam", "Team Project"],
         featured: true,
         links: [
-            { label: "GitHub", href: "https://github.com/ColinGreenidge8896" },
+            { label: "GitHub", href: "https://github.com/millerforce/RoboRush" },
         ],
         highlights: [
             "Implemented robot behavior, factory mechanics, and a repair minigame in C#.",
@@ -114,7 +116,10 @@ export const projects: Project[] = [
         status: "Completed",
         tags: ["Android", "Syncthing", "Tailscale", "Self-Hosted", "Networking"],
         featured: false,
-        links: [],
+        links: [
+            { label: "Syncthing", href: "https://syncthing.net/" },
+            { label: "Tailscale", href: "https://tailscale.com/" },
+        ],
         highlights: [
             "Configured Syncthing for continuous peer-to-peer file sync across all devices.",
             "Used Tailscale to provide secure remote access without public port exposure.",
