@@ -7,7 +7,6 @@ import { BlogPage } from "../../features/blog/BlogPage";
 import { PostDetailPage } from "../../features/blog/PostDetailPage";
 import { AboutPage } from "../../features/about/AboutPage";
 import { ContactPage } from "../../features/contact/ContactPage";
-import { SystemPage } from "../../features/system/SystemPage";
 
 export function AppRouter() {
     return (
@@ -20,7 +19,6 @@ export function AppRouter() {
                 <Route path="blog/:slug" element={<PostDetailPage />} />
                 <Route path="about" element={<AboutPage />} />
                 <Route path="contact" element={<ContactPage />} />
-                <Route path="system" element={<SystemPage />} />
             </Route>
         </Routes>
     );

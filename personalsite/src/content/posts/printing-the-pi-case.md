@@ -1,3 +1,10 @@
+---
+title: 3D Printing the Raspberry Pi Case
+date: 2026-04-10
+summary: Design choices, printing lessons, and practical considerations from building a case for my self-hosted portfolio server.
+tags: [3D Printing, Raspberry Pi, Hardware]
+---
+
 I wanted a case for the Raspberry Pi 4B running my portfolio server, and since I had an Anycubic Kobra 2 Neo sitting around, it seemed like a good excuse to actually use it.
 
 I found [Malolo's screw-less snap-fit Pi 4 case](https://cults3d.com/en/3d-model/gadget/malolo-s-screw-less-snap-fit-raspberry-pi-4-model-b-case-stands) on Cults3D, a two-part design with ventilation slots, port cutouts, and a lid featuring the Raspberry Pi logo cut through it. I downloaded it, loaded it into PrusaSlicer, and got a solid education in 3D printer calibration.

@@ -1,3 +1,10 @@
+---
+title: An Overview of My Network Security Lab
+date: 2026-05-08
+summary: A walk-through of the virtual lab environment from my network security course, the defensive setup, and the categories of attacks the labs cover.
+tags: [Security, Networking, Virtualization, School]
+---
+
 My network security course this past term centered on a virtual lab where we set up a small network, secured it, then turned around and attacked it ourselves. The whole thing runs on a laptop using VirtualBox, with each VM playing a specific role in the simulation. This post is an overview of what the lab covered. Future posts will dig into specific attacks in more detail.
 
 ## The lab environment

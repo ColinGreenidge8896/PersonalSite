@@ -1,3 +1,10 @@
+---
+title: Using Tailscale Funnel with nginx
+date: 2026-04-20
+summary: How I exposed my Raspberry Pi hosted site safely without relying on traditional public SSH or broad router port forwarding.
+tags: [Networking, Raspberry Pi, Tailscale, nginx]
+---
+
 Hosting a website from home usually means logging into your router and forwarding a port so incoming traffic can reach your machine. I share internet service with others in the building and do not have access to the router admin panel, so that was not an option. Tailscale Funnel solved this without needing any of that.
 
 ## How it works

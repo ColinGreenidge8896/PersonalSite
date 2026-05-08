@@ -12,7 +12,7 @@ export function BlogPage() {
             <div className="post-list">
                 {allPosts.map((post) => (
                     <article key={post.slug} className="post-list-item">
-                        <p className="card-kicker">{post.date}</p>
+                        <p className="card-kicker">{post.displayDate}</p>
                         <h2>
                             <Link to={`/blog/${post.slug}`} className="post-title-link">
                                 {post.title}

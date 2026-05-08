@@ -1,25 +1,8 @@
 import { Link } from "react-router-dom";
 import { featuredProjects } from "../../data/projects";
 import { latestPosts } from "../../data/posts";
+import { workshopPhotos } from "../../data/workshop";
 import { ProjectCard } from "../../components/ui/ProjectCard";
-
-const workshopPhotos = [
-    {
-        src: "/images/printing-the-pi-case/finished-in-use.jpg",
-        alt: "The 3D printed Raspberry Pi case in use, with cables connected",
-        caption: "Pi running nginx in its 3D printed case",
-    },
-    {
-        src: "/images/printing-the-pi-case/scraps.jpg",
-        alt: "A box full of failed 3D prints from the Pi case build",
-        caption: "Iteration history",
-    },
-    {
-        src: "/images/printing-the-pi-case/finished-on-printer.jpg",
-        alt: "The finished case sitting on the 3D printer bed",
-        caption: "Fresh off the print bed",
-    },
-];
 
 export function HomePage() {
     return (
@@ -62,7 +45,7 @@ export function HomePage() {
                 <div className="card-grid">
                     {latestPosts.map((post) => (
                         <article key={post.slug} className="content-card compact-card">
-                            <p className="card-kicker">{post.date}</p>
+                            <p className="card-kicker">{post.displayDate}</p>
                             <h3>
                                 <Link to={`/blog/${post.slug}`} className="project-title-link">
                                     {post.title}

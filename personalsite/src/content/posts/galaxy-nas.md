@@ -1,3 +1,10 @@
+---
+title: Turning an Old Samsung Galaxy into a Home NAS
+date: 2026-05-01
+summary: Using Syncthing and Tailscale to turn a spare Samsung Galaxy S20 into a self-hosted alternative to cloud storage.
+tags: [Self-Hosted, Syncthing, Tailscale, Android]
+---
+
 My laptop fills up fast with school files, and paying for cloud storage felt unnecessary when I had a Samsung Galaxy S20 sitting unused in a drawer. It runs constantly, has decent storage, and costs nothing extra to operate. With Syncthing and Tailscale it works as a self-hosted alternative to Google Drive across all my devices.
 
 ## The setup
