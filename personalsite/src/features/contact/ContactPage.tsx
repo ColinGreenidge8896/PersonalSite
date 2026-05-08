@@ -91,13 +91,6 @@ export function ContactPage() {
                     </a>
                 </div>
 
-                <div className="contact-availability">
-                    <span className="card-kicker">Currently seeking</span>
-                    <p>
-                        Co-op placements for the summer and fall 2026 terms. If your
-                        team is hiring, I would love to hear from you.
-                    </p>
-                </div>
             </div>
         </section>
     );

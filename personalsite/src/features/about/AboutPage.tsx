@@ -1,7 +1,7 @@
 export function AboutPage() {
-    const languages = ["Python", "C / C++", "JavaScript", "React", "Node.js", "Flask", "SQL", "C#", "Java"];
-    const infrastructure = ["Linux", "Docker", "nginx", "Tailscale", "Git", "GitHub Actions", "Microsoft Azure"];
-    const concepts = ["REST APIs", "TCP/IP", "Zero-Trust Architecture", "TDD", "CI/CD", "Database Design", "Distributed Systems", "Client-Server Architecture"];
+    const languages = ["Python", "C / C++", "JavaScript", "TypeScript", "React", "Node.js", "Express", "Flask", "SQL", "C#", "Java"];
+    const infrastructure = ["Linux", "Docker", "nginx", "Tailscale", "Git", "GitHub Actions", "Microsoft Azure", "CMake"];
+    const concepts = ["REST APIs", "Socket Programming", "TCP/IP", "Concurrent / Parallel Programming", "Zero-Trust Architecture", "TDD", "CI/CD", "Database Design", "Systems Analysis & Design", "Cross-Platform Development", "Client-Server Architecture"];
 
     return (
         <div className="about-page">
@@ -54,10 +54,10 @@ export function AboutPage() {
                                 </p>
                                 <p className="card-copy">
                                     In school I have been a regular team lead across group
-                                    projects, covering database-driven web apps, client-server
-                                    systems, and game development. The network security stream
-                                    has given me a solid grounding in secure system design and
-                                    applied networking.
+                                    projects, covering database-driven web apps, low-level
+                                    networking, parallel programming, and game development.
+                                    The network security stream has given me a solid grounding
+                                    in secure system design and applied networking.
                                 </p>
                             </div>
                         </div>
