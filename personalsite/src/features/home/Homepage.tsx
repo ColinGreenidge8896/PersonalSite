@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { featuredProjects } from "../../data/projects";
 import { latestPosts } from "../../data/posts";
 import { ProjectCard } from "../../components/ui/ProjectCard";
@@ -49,7 +50,11 @@ export function HomePage() {
                         {latestPosts.map((post) => (
                             <article key={post.slug} className="content-card compact-card">
                                 <p className="card-kicker">{post.date}</p>
-                                <h3>{post.title}</h3>
+                                <h3>
+                                    <Link to={`/blog/${post.slug}`} className="project-title-link">
+                                        {post.title}
+                                    </Link>
+                                </h3>
                                 <p className="card-copy">{post.summary}</p>
                             </article>
                         ))}

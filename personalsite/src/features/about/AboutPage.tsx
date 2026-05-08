@@ -1,10 +1,124 @@
 export function AboutPage() {
+    const languages = ["Python", "C / C++", "JavaScript", "React", "Node.js", "Flask", "SQL", "C#", "Java"];
+    const infrastructure = ["Linux", "Docker", "nginx", "Tailscale", "Git", "GitHub Actions", "Microsoft Azure"];
+    const concepts = ["REST APIs", "TCP/IP", "Zero-Trust Architecture", "TDD", "CI/CD", "Database Design", "Distributed Systems", "Client-Server Architecture"];
+
     return (
-        <section className="container page-section">
-            <h1>About</h1>
-            <p>
-                I build software with a focus on clarity, structure, and useful design.
-            </p>
-        </section>
+        <div className="about-page">
+            <section className="container page-section">
+                <div className="about-page-content">
+
+                    <div className="about-intro">
+                        <p className="eyebrow">Computer Science, Conestoga College</p>
+                        <h1 className="page-title">Colin Greenidge</h1>
+                        <p className="hero-copy">
+                            Fourth-year CS student in the network security stream at Conestoga
+                            College in Waterloo, Ontario. I build software across web
+                            development, backend systems, and self-hosted infrastructure, with
+                            a particular interest in business applications, system integration,
+                            and practical tools that solve real problems.
+                        </p>
+                    </div>
+
+                    <div className="content-card about-coop">
+                        <p className="card-kicker">Seeking co-op</p>
+                        <p>
+                            Looking for co-op placements for the summer and fall 2026 terms.
+                            Particularly interested in roles involving business application
+                            development, system integration, and data solutions. 3.78 GPA.
+                        </p>
+                        <a href="mailto:colin.b.greenidge@gmail.com" className="text-link about-coop-link">
+                            Get in touch
+                        </a>
+                    </div>
+
+                    <div className="two-column-grid">
+                        <div>
+                            <div className="section-heading">
+                                <h2>What I build</h2>
+                            </div>
+                            <div className="stack-list">
+                                <p className="card-copy">
+                                    Outside of coursework I gravitate toward infrastructure
+                                    and tools that I actually use. My portfolio runs on a
+                                    Raspberry Pi I set up and 3D printed a case for. My home
+                                    storage runs on a repurposed Samsung Galaxy S20 using
+                                    Syncthing and Tailscale.
+                                </p>
+                                <p className="card-copy">
+                                    I am also building a personal assistant application that
+                                    uses a locally hosted AI model for everyday data processing,
+                                    with the Claude API for deeper analysis. The goal is
+                                    something that genuinely learns your patterns and surfaces
+                                    useful insights over time.
+                                </p>
+                                <p className="card-copy">
+                                    In school I have been a regular team lead across group
+                                    projects, covering database-driven web apps, client-server
+                                    systems, and game development. The network security stream
+                                    has given me a solid grounding in secure system design and
+                                    applied networking.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className="section-heading">
+                                <h2>Background</h2>
+                            </div>
+                            <div className="stack-list">
+                                <p className="card-copy">
+                                    Before and alongside my degree, I worked as a cook at the
+                                    University of Guelph, training and managing teams of 15 or
+                                    more staff across multiple service stations.
+                                </p>
+                                <p className="card-copy">
+                                    In 2022 I competed in the ACF-Certified cooking competition
+                                    at the University of Massachusetts Amherst Annual Chef
+                                    Culinary Conference, representing the University of Guelph,
+                                    and won a silver medal. The precision, time pressure, and
+                                    team coordination from that work transfers more than you
+                                    would expect.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="section-heading">
+                            <h2>Skills</h2>
+                            <p>Languages, tools, and concepts I work with regularly.</p>
+                        </div>
+                        <div className="skills-grid">
+                            <div className="content-card">
+                                <p className="card-kicker">Languages and Frameworks</p>
+                                <ul className="tag-row">
+                                    {languages.map((s) => (
+                                        <li key={s} className="tag">{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="content-card">
+                                <p className="card-kicker">Infrastructure and Tools</p>
+                                <ul className="tag-row">
+                                    {infrastructure.map((s) => (
+                                        <li key={s} className="tag">{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="content-card">
+                                <p className="card-kicker">Concepts</p>
+                                <ul className="tag-row">
+                                    {concepts.map((s) => (
+                                        <li key={s} className="tag">{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
     );
 }
