@@ -45,28 +45,30 @@ export function AboutPage() {
         "Raspberry Pi",
         "3D Printing",
     ];
-    const concepts = [
+    const architecture = [
         "REST APIs",
         "Client-Server Architecture",
         "Socket Programming",
         "TCP / UDP",
         "Custom Binary Protocols",
         "HTTP Server Implementation",
-        "Concurrent / Parallel Programming",
-        "Multithreading",
-        "Performance Optimization",
         "Cross-Platform Development",
-        "Database Design",
-        "Database Normalization",
-        "Data Analysis",
         "Object-Oriented Design",
         "Design Patterns",
+        "Database Design",
+        "Database Normalization",
         "Systems Analysis & Design",
+    ];
+    const practices = [
         "TDD",
         "Unit & Integration Testing",
         "Performance Testing",
         "CI/CD",
         "Code Review & PR Workflow",
+        "Concurrent / Parallel Programming",
+        "Multithreading",
+        "Performance Optimization",
+        "Data Analysis",
         "Self-Hosting",
         "System Administration",
         "Game Development",
@@ -200,9 +202,17 @@ export function AboutPage() {
                                 </ul>
                             </div>
                             <div className="content-card">
-                                <p className="card-kicker">Concepts and Practices</p>
+                                <p className="card-kicker">Architecture and Concepts</p>
                                 <ul className="tag-row">
-                                    {concepts.map((s) => (
+                                    {architecture.map((s) => (
+                                        <li key={s} className="tag">{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="content-card">
+                                <p className="card-kicker">Engineering Practices</p>
+                                <ul className="tag-row">
+                                    {practices.map((s) => (
                                         <li key={s} className="tag">{s}</li>
                                     ))}
                                 </ul>
