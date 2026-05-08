@@ -9,7 +9,14 @@ export function AboutPage() {
         "SQL",
         "C#",
         "Java",
+        "Qt",
+        "Bash",
+        "PowerShell",
+    ];
+    const frameworks = [
         "React",
+        "React Router",
+        "Vite",
         "Node.js",
         "Express",
         "Flask",
@@ -17,12 +24,16 @@ export function AboutPage() {
         "Unity",
         "Pandas",
         "Matplotlib",
+        "ReactMarkdown",
     ];
     const infrastructure = [
         "Linux",
         "Docker",
         "nginx",
         "Tailscale",
+        "Syncthing",
+        "OpenVPN",
+        "Wireshark",
         "Git",
         "GitHub Actions",
         "Microsoft Azure",
@@ -31,23 +42,50 @@ export function AboutPage() {
         "VirtualBox",
         "OPNsense",
         "JMeter",
+        "Raspberry Pi",
+        "3D Printing",
     ];
     const concepts = [
         "REST APIs",
+        "Client-Server Architecture",
         "Socket Programming",
         "TCP / UDP",
         "Custom Binary Protocols",
+        "HTTP Server Implementation",
         "Concurrent / Parallel Programming",
+        "Multithreading",
+        "Performance Optimization",
+        "Cross-Platform Development",
+        "Database Design",
+        "Database Normalization",
+        "Data Analysis",
+        "Object-Oriented Design",
+        "Design Patterns",
+        "Systems Analysis & Design",
+        "TDD",
+        "Unit & Integration Testing",
+        "Performance Testing",
+        "CI/CD",
+        "Code Review & PR Workflow",
+        "Self-Hosting",
+        "System Administration",
+        "Game Development",
+    ];
+    const security = [
         "Authentication Systems",
         "Zero-Trust Architecture",
         "Active Directory",
-        "TDD",
-        "CI/CD",
-        "Database Design",
-        "Data Analysis",
-        "Systems Analysis & Design",
-        "Cross-Platform Development",
-        "Client-Server Architecture",
+        "Group Policy",
+        "Network Architecture",
+        "Firewall Configuration",
+        "VPN Configuration",
+        "Penetration Testing",
+        "ARP Poisoning / MITM",
+        "Browser Exploitation",
+        "Pass-the-Hash",
+        "Kerberoasting",
+        "Vulnerability Scanning",
+        "Software Security",
     ];
 
     return (
@@ -138,9 +176,17 @@ export function AboutPage() {
                         </div>
                         <div className="skills-grid">
                             <div className="content-card">
-                                <p className="card-kicker">Languages and Frameworks</p>
+                                <p className="card-kicker">Languages</p>
                                 <ul className="tag-row">
                                     {languages.map((s) => (
+                                        <li key={s} className="tag">{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="content-card">
+                                <p className="card-kicker">Frameworks and Libraries</p>
+                                <ul className="tag-row">
+                                    {frameworks.map((s) => (
                                         <li key={s} className="tag">{s}</li>
                                     ))}
                                 </ul>
@@ -154,9 +200,17 @@ export function AboutPage() {
                                 </ul>
                             </div>
                             <div className="content-card">
-                                <p className="card-kicker">Concepts</p>
+                                <p className="card-kicker">Concepts and Practices</p>
                                 <ul className="tag-row">
                                     {concepts.map((s) => (
+                                        <li key={s} className="tag">{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="content-card">
+                                <p className="card-kicker">Networking and Security</p>
+                                <ul className="tag-row">
+                                    {security.map((s) => (
                                         <li key={s} className="tag">{s}</li>
                                     ))}
                                 </ul>
