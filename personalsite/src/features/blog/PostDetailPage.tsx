@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { getPostBySlug } from "../../data/posts";
 
 export function PostDetailPage() {
@@ -38,7 +39,7 @@ export function PostDetailPage() {
             </header>
 
             <div className="post-body prose">
-                <ReactMarkdown>{post.content}</ReactMarkdown>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
             </div>
         </section>
     );

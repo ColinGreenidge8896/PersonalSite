@@ -667,3 +667,27 @@ img {
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
 }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+
+.prose th {
+  background: var(--surface-2);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.prose td {
+  color: var(--text-soft);
+}
