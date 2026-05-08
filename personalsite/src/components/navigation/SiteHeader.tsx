@@ -13,8 +13,11 @@ export function SiteHeader() {
     return (
         <header className="site-header">
             <div className="container nav-bar">
-                <NavLink to="/" className="brand">
-                    Colin Greenidge
+                <NavLink to="/" className="brand-block">
+                    <span className="brand">Colin Greenidge</span>
+                    <span className="brand-tagline">
+                        Software, systems, and technical experiments
+                    </span>
                 </NavLink>
 
                 <nav className="nav-links" aria-label="Main navigation">

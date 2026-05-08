@@ -65,9 +65,23 @@ img {
   gap: var(--space-4);
 }
 
+.brand-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1.2;
+}
+
 .brand {
   font-weight: 700;
   letter-spacing: -0.02em;
+  font-size: 1.05rem;
+}
+
+.brand-tagline {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  letter-spacing: 0.01em;
 }
 
 .nav-links {
@@ -154,6 +168,19 @@ img {
   margin: 0 0 var(--space-2);
   font-size: 1.8rem;
   letter-spacing: -0.03em;
+  position: relative;
+  padding-left: var(--space-3);
+}
+
+.section-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  bottom: 0.25em;
+  width: 4px;
+  background: var(--accent);
+  border-radius: 2px;
 }
 
 .section-heading p {
@@ -257,6 +284,24 @@ img {
   background: var(--surface-2);
 }
 
+.project-status--in-progress {
+  color: var(--accent-warm);
+  background: var(--accent-warm-soft);
+  border-color: var(--accent-warm-soft);
+}
+
+.project-status--completed {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+}
+
+.project-status--planned {
+  color: var(--accent-amber);
+  background: var(--accent-amber-soft);
+  border-color: var(--accent-amber-soft);
+}
+
 .project-title-link {
   transition: opacity 160ms ease;
 }
@@ -321,6 +366,45 @@ img {
 @media (max-width: 900px) {
   .project-detail-meta {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Workshop photo grid (homepage) */
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.workshop-photo {
+  margin: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.workshop-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.workshop-photo figcaption {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-photo img {
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 }
 

@@ -10,7 +10,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <article className="content-card project-card">
             <div className="project-card-meta">
                 <p className="card-kicker">{project.category}</p>
-                <span className="project-status">{project.status}</span>
+                <span
+                    className={`project-status project-status--${project.status
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                >
+                    {project.status}
+                </span>
             </div>
 
             <h3>
