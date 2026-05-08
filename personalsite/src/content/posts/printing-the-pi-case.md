@@ -2,6 +2,8 @@ I wanted a case for the Raspberry Pi 4B running my portfolio server, and since I
 
 I found [Malolo's screw-less snap-fit Pi 4 case](https://cults3d.com/en/3d-model/gadget/malolo-s-screw-less-snap-fit-raspberry-pi-4-model-b-case-stands) on Cults3D, a two-part design with ventilation slots, port cutouts, and a lid featuring the Raspberry Pi logo cut through it. I downloaded it, loaded it into PrusaSlicer, and got a solid education in 3D printer calibration.
 
+![The finished case sitting on the printer bed after a successful print](/images/printing-the-pi-case/finished-on-printer.jpg)
+
 ## Slicer setup
 
 The first issue was poor bed adhesion. Parts were peeling up mid-print and the first layers looked rough. Re-running the auto-leveling and cleaning the bed with isopropyl alcohol helped, but prints were still coming out weak and gappy.
@@ -26,9 +28,17 @@ I used AI to help work through the diagnosis, which was useful for narrowing dow
 
 ## The logo lid
 
-The lid design has the Raspberry Pi logo cut through it, which requires the printer to bridge filament across open space. With settings still being dialed in, that area came out stringy across a few attempts. The box of scraps in the photos tells that story pretty well.
+The lid design has the Raspberry Pi logo cut through it, which requires the printer to bridge filament across open space. With settings still being dialed in, that area came out stringy across a few attempts.
 
-I ended up going with a cleaner lid design without the cutout, which printed reliably first try. The finished case is the two-tone blue and gray one in the photos and it has been sitting on my desk running nginx without issue since.
+![A failed lid print with the Raspberry Pi logo area filled with stringy filament](/images/printing-the-pi-case/failed-lid.jpg)
+
+The box of scraps tells that story pretty well.
+
+![A box full of failed and rejected 3D prints from the iteration process](/images/printing-the-pi-case/scraps.jpg)
+
+I ended up going with a cleaner lid design without the cutout, which printed reliably first try. The finished case is the two-tone blue and gray one below, which has been sitting on my desk running nginx without issue since.
+
+![The finished case in use, with USB and ethernet cables connected and indicator LEDs lit](/images/printing-the-pi-case/finished-in-use.jpg)
 
 ## Takeaways
 
