@@ -1,7 +1,50 @@
 export function AboutPage() {
-    const languages = ["Python", "C / C++", "JavaScript", "TypeScript", "React", "Node.js", "Express", "Flask", "SQL", "C#", "Java"];
-    const infrastructure = ["Linux", "Docker", "nginx", "Tailscale", "Git", "GitHub Actions", "Microsoft Azure", "CMake"];
-    const concepts = ["REST APIs", "Socket Programming", "TCP/IP", "Concurrent / Parallel Programming", "Zero-Trust Architecture", "TDD", "CI/CD", "Database Design", "Systems Analysis & Design", "Cross-Platform Development", "Client-Server Architecture"];
+    const languages = [
+        "Python",
+        "C",
+        "C++",
+        "JavaScript",
+        "TypeScript",
+        "HTML / CSS",
+        "SQL",
+        "C#",
+        "Java",
+        "React",
+        "Node.js",
+        "Express",
+        "Flask",
+        "Unity",
+    ];
+    const infrastructure = [
+        "Linux",
+        "Docker",
+        "nginx",
+        "Tailscale",
+        "Git",
+        "GitHub Actions",
+        "Microsoft Azure",
+        "CMake",
+        "Visual Studio",
+        "VirtualBox",
+        "OPNsense",
+        "JMeter",
+    ];
+    const concepts = [
+        "REST APIs",
+        "Socket Programming",
+        "TCP / UDP",
+        "Custom Binary Protocols",
+        "Concurrent / Parallel Programming",
+        "Authentication Systems",
+        "Zero-Trust Architecture",
+        "Active Directory",
+        "TDD",
+        "CI/CD",
+        "Database Design",
+        "Systems Analysis & Design",
+        "Cross-Platform Development",
+        "Client-Server Architecture",
+    ];
 
     return (
         <div className="about-page">

@@ -83,6 +83,28 @@ export const projects: Project[] = [
         ],
     },
     {
+        slug: "robot-control-network",
+        title: "Robot Control Network Interface",
+        category: "Networking / Systems",
+        summary:
+            "A C++ networking term project that builds a complete communication system for controlling a robot simulator, including a custom socket abstraction layer, binary packet protocol, and built-in HTTP server.",
+        description:
+            "A Networks term project that implements a full end-to-end communication system for controlling a robot simulator. The application uses both TCP and UDP socket programming with a custom abstraction layer, defines its own binary packet protocol with sequence numbering, and ships a minimal embedded HTTP server that powers a browser-based control GUI. Operators can issue commands such as drive, status, and sleep, and receive live telemetry responses. The build supports Windows via Visual Studio and Linux via CMake and Docker.",
+        year: "2025",
+        status: "Completed",
+        tags: ["C++", "TCP/UDP", "Sockets", "CMake", "Docker", "Cross-Platform"],
+        featured: false,
+        links: [
+            { label: "GitHub", href: "https://github.com/ColinGreenidge8896/NetworksV2TermProject" },
+        ],
+        highlights: [
+            "Built a custom TCP/UDP socket abstraction layer in C++ supporting both Windows and Linux.",
+            "Designed a binary packet protocol with sequence numbering for reliable command and telemetry exchange.",
+            "Embedded a minimal HTTP server to serve a browser-based control GUI from the application itself.",
+            "Configured cross-platform builds via Visual Studio, CMake, and Docker.",
+        ],
+    },
+    {
         slug: "roborush",
         title: "RoboRush",
         category: "Game Development",
