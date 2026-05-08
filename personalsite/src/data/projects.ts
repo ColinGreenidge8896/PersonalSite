@@ -127,6 +127,46 @@ export const projects: Project[] = [
         ],
     },
     {
+        slug: "housing-market-stats",
+        title: "Canadian Housing Market Analysis",
+        category: "Data Analysis",
+        summary:
+            "A Python data analysis project comparing Canadian housing market trends, including 2-bedroom rent versus vacancy rates and household income versus housing prices.",
+        description:
+            "A collaborative data analysis project using Python, Pandas, and Matplotlib to explore relationships in the Canadian housing market. The project ingests rent, vacancy, and household income data from public datasets, cleans and groups it by year, and produces dual-axis comparison plots highlighting trends like 2-bedroom rent against vacancy rates and income against housing prices over the past two decades.",
+        year: "2025",
+        status: "Completed",
+        tags: ["Python", "Pandas", "Matplotlib", "Data Analysis", "Team Project"],
+        featured: false,
+        links: [],
+        highlights: [
+            "Cleaned and merged multiple Statistics Canada datasets covering rent, vacancy, and income.",
+            "Used Pandas grouping and aggregation to produce year-over-year trend data.",
+            "Built dual-axis Matplotlib visualizations to compare related economic indicators.",
+            "Worked collaboratively with a teammate on dataset selection and analysis direction.",
+        ],
+    },
+    {
+        slug: "software-security-final",
+        title: "Software Security Final Project",
+        category: "Security / Systems",
+        summary:
+            "A C client application that interacts with a deliberately vulnerable server using raw sockets and a custom binary packet protocol, built for a Software Security course final.",
+        description:
+            "The final project for my Software Security course, where I built a C client to communicate with an intentionally vulnerable server. The work involved constructing custom binary packets at the byte level using raw sockets, handling segmented payloads with type tags for fields like usernames and passwords, and exploring how the server processes and trusts incoming data. The exercise was a hands-on look at how protocol design choices and input handling create or close attack surfaces.",
+        year: "2026",
+        status: "Completed",
+        tags: ["C", "Raw Sockets", "Binary Protocols", "Software Security"],
+        featured: false,
+        links: [],
+        highlights: [
+            "Built a C client to communicate over raw sockets with a vulnerable server.",
+            "Constructed custom binary packets with segmented, type-tagged payloads.",
+            "Explored how the server's input handling created exploitable conditions.",
+            "Reinforced understanding of low-level protocol design and security implications.",
+        ],
+    },
+    {
         slug: "galaxy-nas",
         title: "Samsung Galaxy S20 Home NAS",
         category: "Infrastructure / Self-Hosted",

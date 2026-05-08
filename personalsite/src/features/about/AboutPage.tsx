@@ -13,7 +13,10 @@ export function AboutPage() {
         "Node.js",
         "Express",
         "Flask",
+        "CROW",
         "Unity",
+        "Pandas",
+        "Matplotlib",
     ];
     const infrastructure = [
         "Linux",
@@ -41,6 +44,7 @@ export function AboutPage() {
         "TDD",
         "CI/CD",
         "Database Design",
+        "Data Analysis",
         "Systems Analysis & Design",
         "Cross-Platform Development",
         "Client-Server Architecture",
