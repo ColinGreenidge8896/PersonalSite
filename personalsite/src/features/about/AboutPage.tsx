@@ -41,6 +41,8 @@ export function AboutPage() {
         "Visual Studio",
         "VirtualBox",
         "OPNsense",
+        "FortiGate / FortiSwitch",
+        "Exchange Online",
         "JMeter",
         "Raspberry Pi",
         "3D Printing",
@@ -108,11 +110,15 @@ export function AboutPage() {
                     </div>
 
                     <div className="content-card about-coop">
-                        <p className="card-kicker">Seeking co-op</p>
+                        <p className="card-kicker">Current co-op</p>
                         <p>
-                            Looking for co-op placements for the summer and fall 2026 terms.
-                            Particularly interested in roles involving business application
-                            development, system integration, and data solutions. 3.78 GPA.
+                            Software Engineer Intern at Scotiabank in Scarborough, September
+                            to December 2026. Earlier this year I worked on the IT help desk
+                            at the Township of Woolwich, covering Active Directory and
+                            Exchange administration, hardware imaging and deployment,
+                            Group Policy, and network hardware troubleshooting with
+                            FortiGate and FortiSwitch. Next up on the certification path
+                            are Security+ and then AZ-500. 3.78 GPA.
                         </p>
                         <a href="mailto:colin.b.greenidge@gmail.com" className="text-link about-coop-link">
                             Get in touch
@@ -155,9 +161,9 @@ export function AboutPage() {
                             </div>
                             <div className="stack-list">
                                 <p className="card-copy">
-                                    Before and alongside my degree, I worked as a cook at the
-                                    University of Guelph, training and managing teams of 15 or
-                                    more staff across multiple service stations.
+                                    From 2017 until 2026, alongside my degree, I worked as a
+                                    cook at the University of Guelph, training and managing
+                                    teams of 15 or more staff across multiple service stations.
                                 </p>
                                 <p className="card-copy">
                                     In 2022 I competed in the ACF-Certified cooking competition

@@ -37,7 +37,7 @@ export function ContactPage() {
             <div className="section-heading">
                 <h1 className="page-title">Contact</h1>
                 <p>
-                    Open to talking about co-op opportunities, infrastructure work,
+                    Open to talking about infrastructure work, security,
                     interesting projects, or just about anything technical.
                 </p>
             </div>
